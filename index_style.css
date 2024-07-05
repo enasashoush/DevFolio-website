@@ -1,0 +1,345 @@
+*
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+header
+{
+    background: rgba(0, 0, 0, 0.5) url(images/images01.jpg);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;   
+}
+.navbar-stick
+{
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    z-index: 99999;
+}
+.position-sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.bg-opacity
+{
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+
+}
+.a 
+{
+    position: relative;
+}
+.a::after
+{
+    content: "";
+    position: absolute;
+    background-color:white ;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+
+.a:hover::after
+{
+    width: 100%;
+}
+
+#home .typing h3::after
+{
+   content:"";
+   animation: typing 6s infinite ease-in-out ;
+   font-weight:300;
+}
+
+@keyframes typing
+{
+    0%,
+    31.6%,
+    59.8%,
+    99.2%,
+    133.4%
+    {
+        content:"";
+    }
+
+    1.2%,
+    30.4%,
+    32.8%,
+    58.6%{
+        content:"D";
+    }
+
+    2.4%,
+    29.2%,
+    34%,
+    57.4%{
+        content:"DE";
+    }
+
+    3.6%,
+    28%{
+        content:"DEV";
+    }
+
+    4.8%,
+    26.8%{
+        content:"DEVE";
+    }
+
+    6%,
+    25.6%{
+        content:"DEVEL";
+    }
+
+    7.2%,
+    24.4%{
+        content:"DEVELO";
+    }
+
+    8.4%,
+    23.2%{
+        content:"DEVELOP";
+    }
+
+    9.6%,
+    22%{
+        content:"DEVELOPE";
+    }
+
+    10.8%,
+    20.8%{
+        content:"DEVELOPER";
+    }
+
+    34.2%,
+    56.2%{
+        content:"DES";
+    }
+
+    35.4%,
+    55%{
+        content:"DESI";
+    }
+
+    36.6%,
+    53.8%{
+        content:"DESIG";
+    }
+
+    37.8%,
+    52.6%{
+        content:"DESIGN";
+    }
+
+    39%,
+    51.4%{
+        content:"DESIGNE";
+    }
+
+    40.2%,
+    50.2%{
+        content:"DESIGNER";
+    }
+    60.2%,
+    99%{
+        content:"P";
+    }
+    61.4%,
+    97.8%{
+        content:"PH";
+    }
+    62.6%,
+    96.6%{
+        content:"PHO";
+    }
+    63.8%,
+    95.4%{
+        content:"PHOT";
+    }
+    65%,
+    94.2%{
+        content:"PHOTO";
+    }
+    66.2%,
+    93%{
+        content:"PHOTPG ";
+    }
+    67.4%,
+    91.8%{
+        content:"PHOTOGR";
+    }
+    68.6%,
+    90.6%{
+        content:"PHOTOGRA";
+    }
+    69.8%,
+    89.4%{
+        content:"PHOTOGRAP";
+    }
+    71%,
+    88.2%{
+        content:"PHOTOGRAPH";
+    }
+    72.2%,
+    87%{
+        content:"PHOTOGRAPHE";
+    }
+    73.4%,
+    85.8%{
+        content:"PHOTOGRAPHER";
+    }
+    74.6%,
+    84.6%{
+        content:"PHOTOGRAPHER.";
+    }
+    100.4%,
+    132%{
+        content:"F";
+    }
+    101.6%,
+    130.8%{
+        content:"FR";
+    }
+    102.8%,
+    129.6%{
+        content:"FRE";
+    }
+    104%,
+    128.4%{
+        content:"FREE";
+    }
+    105.2%,
+    127.2%{
+        content:"FREEL";
+    }
+    106.4%,
+    126%{
+        content:"FREELA";
+    }
+    106.4%,
+    124.8%{
+        content:"FREELAN";
+    }
+    108.8%,
+    123.6%{
+        content:"FREELANC";
+    }
+    110%,
+    122.4%{
+        content:"FREELANCE";
+    }
+    111.2%,
+    121.2%{
+        content:"FREELANCER";
+    }
+
+}
+
+.p-250
+{
+    padding: 250px;
+}
+
+.fs-80
+{
+    font-size: 80px;
+}
+.fs-30
+{
+    font-size: 30px;
+}
+.icon
+{
+    transition: 0.5s;
+
+}
+.icon:hover
+{
+    background-color: rgb(0, 61, 192);
+    border-color: rgba(0, 61, 192, 0.158);
+    box-shadow: rgba(0, 61, 192, 0.158);
+    color: white;
+}
+
+.bg-opacity-primary
+{
+    background: rgb(50, 115, 255) url(images/images03.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border-lightblue
+{
+    border-color: aquamarine;
+}
+
+.card 
+{
+   overflow: hidden;
+   
+}
+.card img
+{
+    transition: all 1.5s ease-in-out 0.2s;
+}
+.card img:hover
+{
+    transform: scale(1.3 ,1.3 );
+   
+}
+.w-8
+{
+    width: 15%;
+}
+
+.blog
+{
+    background: rgba(37, 81, 175, 0.807) url(images/images10.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button-1
+{
+    top: 230;
+    left: 140;
+}
+.cards-1
+{
+    padding: 0px !important;
+}
+
+.icon-3
+{
+    transition: all 0.5s ease-in-out ;
+}
+
+.icon-3:hover
+{
+    background-color: rgb(31, 93, 227);
+    color: white !important;
+}
+
+.bg-blue{
+    background-color: rgb(0, 61, 192);
+}
